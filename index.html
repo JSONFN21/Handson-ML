@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands-on ML Studio - Interactive IDE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="glass-nav">
+        <a href="#top" class="logo">Hands-on ML Studio</a>
+        <div class="nav-links">
+            <a href="#resources">Resources</a>
+            <a href="#community">Community</a>
+            <a href="#help">Help</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Master Machine Learning by <span class="gradient-text">Doing</span></h1>
+            <p>An integrated environment for coding, visualizing, and mastering ML concepts.</p>
+            <button class="cta-button">Start Learning</button>
+        </div>
+    </header>
+
+    <section class="app-demo">
+        <div class="ide-container glass-panel">
+            <div class="sidebar tasks-bar">
+                <h3>Tasks</h3>
+                <ul class="task-list">
+                    <li class="completed"><span class="check">✓</span> Load Dataset</li>
+                    <li class="completed"><span class="check">✓</span> Preprocess Data</li>
+                    <li class="active"><span class="dot">●</span> Train Single-Layer Perceptron</li>
+                    <li><span class="dot">○</span> Train with Bias</li>
+                    <li><span class="dot">○</span> Train with Gradient Descent</li>
+                    <li><span class="dot">○</span> Compare Models</li>
+                </ul>
+            </div>
+
+            <div class="editor-area">
+                <div class="editor-header">
+                    <span class="file-name">perceptron_model.py</span>
+                </div>
+                <div class="code-content">
+                    <!-- Will be injected by JS -->
+                </div>
+            </div>
+
+            <div class="sidebar vis-bar">
+                <h3>Workflow</h3>
+                <div class="workflow-tabs">
+                    <button class="workflow-tab active" onclick="switchWorkflowTab(event, 'data')">Data</button>
+                    <button class="workflow-tab" onclick="switchWorkflowTab(event, 'charts')">Charts</button>
+                    <button class="workflow-tab" onclick="switchWorkflowTab(event, 'resources')">Resources</button>
+                </div>
+
+                <div class="tab-content active" id="data-tab">
+                    <div class="pipeline-steps">
+                        <div class="step completed">
+                            <div class="step-icon">💾</div>
+                            <div class="step-label">Data Sourcing<span class="step-sub">Kaggle API</span></div>
+                        </div>
+                        <div class="step active">
+                            <div class="step-icon">🧹</div>
+                            <div class="step-label">Cleaning<span class="step-sub">Nulls removed</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="charts-tab">
+                    <div class="workflow-placeholder">
+                        <p>📊 Display graphs to show different parts of the training process</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="resources-tab">
+                    <div class="workflow-placeholder">
+                        <p>📚 Model resources and docs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="console-area">
+                <div class="console-header">Terminal</div>
+                <div class="console-output">
+                    <p><span class="prompt">$</span> downloading mnist_dataset...</p>
+                    <p><span class="success">✓</span> dataset loaded (60000 samples)</p>
+                    <p><span class="prompt">$</span> python perceptron_model.py --train</p>
+                    <p>training...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="resources-section">
+        <h2>Learning Paths</h2>
+        <div class="courses-grid">
+            <div class="course-card glass-card" data-course="perceptron">
+                <h3>Perceptron Model</h3>
+                <p>The building block of neural networks.</p>
+                <div class="tags-container">
+                    <span class="bubble">Single-Layer</span>
+                    <span class="bubble">Gradient Descent</span>
+                </div>
+            </div>
+            <div class="course-card glass-card">
+                <h3>AdaBoost</h3>
+                <p>Master ensemble learning techniques.</p>
+                <div class="tags-container">
+                    <span class="bubble">Weighted Majority</span>
+                    <span class="bubble">Drifting</span>
+                    <span class="bubble">Randomized</span>
+                    <span class="bubble">Decision Trees</span>
+                </div>
+            </div>
+            <div class="course-card glass-card">
+                <h3>Neural Networks</h3>
+                <p>Deep dive into architecture design.</p>
+                <div class="tags-container">
+                    <span class="bubble">Multi-Layer Perceptron</span>
+                    <span class="bubble">Backpropagation</span>
+                </div>
+            </div>
+            <div class="course-card glass-card">
+                <h3>Markov Models</h3>
+                <p>Understand stochastic processes.</p>
+                <div class="tags-container">
+                    <span class="bubble">MDP</span>
+                    <span class="bubble">POMDP</span>
+                    <span class="bubble">HMMs</span>
+                </div>
+            </div>
+            <div class="course-card glass-card">
+                <h3>Deep Learning</h3>
+                <p>State-of-the-art models.</p>
+                <div class="tags-container">
+                    <span class="bubble">CNNs</span>
+                    <span class="bubble">RNNs</span>
+                    <span class="bubble">Transformers</span>
+                    <span class="bubble">LSTMs</span>
+                </div>
+            </div>
+            <div class="course-card glass-card">
+                <h3>ML Ops</h3>
+                <p>Packaging and deploying models.</p>
+                <div class="tags-container">
+                    <span class="bubble">Packaging</span>
+                    <span class="bubble">Deploying</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="deep-dive" class="deep-dive-section">
+        <h2>Deep Dives</h2>
+        <div class="dive-grid">
+            <div class="dive-card">
+                <h3>Deep Dive: Machine Learning</h3>
+                <p>Comprehensive guide from basics to advanced.</p>
+                <div class="tags-container">
+                    <span class="tag">Interactive Quizzes</span>
+                    <span class="tag">Mathematical Breakdown</span>
+                </div>
+            </div>
+            <div class="dive-card">
+                <h3>Deep Dive: Classification</h3>
+                <p>Precision, Recall, F1-Score and more.</p>
+                <div class="tags-container">
+                    <span class="tag">Interactive Quizzes</span>
+                    <span class="tag">Mathematical Breakdown</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="community-section">
+        <h2>Community</h2>
+        <p>Join thousands of other learners.</p>
+        <div class="community-threads">
+            <div class="thread glass-card">
+                <div class="thread-msg user-msg">
+                    <strong>@alex:</strong> I'm new to this website. Where do you think I should begin? 🤔
+                </div>
+                <div class="thread-msg reply-msg">
+                    <strong>@sarah:</strong> Welcome! I'd advise you to start with the Perceptron Model and follow the
+                    path. It's really intuitive! 🌟
+                </div>
+            </div>
+            <div class="thread glass-card">
+                <div class="thread-msg user-msg">
+                    <strong>@john:</strong> What's the best model to use for time-series forecasting?
+                </div>
+                <div class="thread-msg reply-msg">
+                    <strong>@prof_t:</strong> Try out the "Deep Learning" course, specifically the RNNs and LSTMs
+                    modules. They are perfect for that! 📉
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="help" class="help-section">
+        <h2>Need Help?</h2>
+        <p>Our support team is here for you.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hands-on ML Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -559,62 +559,48 @@ footer {
         font-size: 2.5rem;
     }
 
-    .hero p {
+    .nav-links {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        font-size: 0.8rem;
+    }
+
+    .logo {
         font-size: 1rem;
     }
 
-    .cta-button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
+    h2 {
+        font-size: 1.5rem;
     }
-}
 
-.hero p {
-    font-size: 0.9rem;
-}
+    .glass-card,
+    .dive-card {
+        padding: 1.5rem;
+    }
 
-.nav-links {
-    display: flex;
-    gap: 0.5rem;
-}
+    .sidebar h3 {
+        font-size: 0.75rem;
+    }
 
-.nav-links a {
-    margin-left: 0;
-    font-size: 0.8rem;
-}
+    .task-list li {
+        font-size: 0.85rem;
+    }
 
-.logo {
-    font-size: 1rem;
-}
+    .workflow-tab {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+    }
 
-h2 {
-    font-size: 1.5rem;
-}
+    .code-content {
+        font-size: 0.85rem;
+        padding: 1rem;
+    }
 
-.glass-card,
-.dive-card {
-    padding: 1.5rem;
-}
-
-.sidebar h3 {
-    font-size: 0.75rem;
-}
-
-.task-list li {
-    font-size: 0.85rem;
-}
-
-.workflow-tab {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.7rem;
-}
-
-.code-content {
-    font-size: 0.85rem;
-    padding: 1rem;
-}
-
-.console-output {
-    font-size: 0.8rem;
-}
+    .console-output {
+        font-size: 0.8rem;
+    }
 }

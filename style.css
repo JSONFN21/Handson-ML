@@ -516,68 +516,7 @@ footer {
     padding: 4rem 2rem;
     color: var(--text-muted);
     border-top: 1px solid var(--glass-border);
-    margin-top: 4rem;
-}
 
-/* Tablet */
-@media (max-width: 1024px) {
-    .ide-container {
-        max-width: 100%;
-        height: auto;
-        grid-template-rows: auto auto;
-    }
-
-    .courses-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .glass-nav {
-        padding: 1rem;
-    }
-
-    .logo {
-        font-size: 1.2rem;
-    }
-
-    .nav-links a {
-        margin-left: 1rem;
-        font-size: 0.9rem;
-    }
-
-    .hero {
-        padding: 6rem 1rem 3rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .nav-links {
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    .nav-links a {
-        margin-left: 0;
-        font-size: 0.8rem;
-    }
-
-    .logo {
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .glass-card,
     .dive-card {
         padding: 1.5rem;
     }

@@ -1,7 +1,7 @@
 :root {
     --bg-color: #f8fafc;
-    --text-color: #1e293b;
-    --text-muted: #64748b;
+    --text-color: #0f172a;
+    --text-muted: #475569;
     --accent-color: #0ea5e9;
     --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
     --glass-bg: rgba(255, 255, 255, 0.7);
@@ -283,7 +283,7 @@ body {
 
 .console-output {
     padding: 1rem;
-    color: var(--text-color);
+    color: #0f172a;
     overflow-y: auto;
 }
 
@@ -302,28 +302,28 @@ body {
 }
 
 .keyword {
-    color: #7c3aed;
+    color: #6d28d9;
 }
 
 .comment {
-    color: #64748b;
+    color: #475569;
     font-style: italic;
 }
 
 .string {
-    color: #059669;
+    color: #047857;
 }
 
 .number {
-    color: #ea580c;
+    color: #c2410c;
 }
 
 .class-name {
-    color: #ca8a04;
+    color: #a16207;
 }
 
 .function {
-    color: #0284c7;
+    color: #0369a1;
 }
 
 .pipeline-steps {

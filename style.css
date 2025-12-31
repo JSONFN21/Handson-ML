@@ -283,7 +283,7 @@ body {
 
 .console-output {
     padding: 1rem;
-    color: #e2e8f0;
+    color: var(--text-color);
     overflow-y: auto;
 }
 
@@ -302,28 +302,28 @@ body {
 }
 
 .keyword {
-    color: #c678dd;
+    color: #7c3aed;
 }
 
 .comment {
-    color: #5c6370;
+    color: #64748b;
     font-style: italic;
 }
 
 .string {
-    color: #98c379;
+    color: #059669;
 }
 
 .number {
-    color: #d19a66;
+    color: #ea580c;
 }
 
 .class-name {
-    color: #e5c07b;
+    color: #ca8a04;
 }
 
 .function {
-    color: #61afef;
+    color: #0284c7;
 }
 
 .pipeline-steps {
@@ -347,7 +347,7 @@ body {
 .step-icon {
     width: 32px;
     height: 32px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(148, 163, 184, 0.15);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -359,7 +359,7 @@ body {
 
 .step.active .step-icon {
     background: var(--accent-gradient);
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.3);
 }
 
 .step-label {
@@ -384,7 +384,7 @@ body {
 
 .workflow-tab {
     padding: 0.4rem 0.75rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(148, 163, 184, 0.1);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
     color: var(--text-muted);
@@ -395,13 +395,13 @@ body {
 }
 
 .workflow-tab:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(148, 163, 184, 0.2);
     color: var(--text-color);
 }
 
 .workflow-tab.active {
     background: var(--accent-color);
-    color: #0f172a;
+    color: #ffffff;
     border-color: var(--accent-color);
     font-weight: 600;
 }
@@ -419,7 +419,7 @@ body {
     text-align: center;
     color: var(--text-muted);
     font-size: 0.75rem;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(148, 163, 184, 0.08);
     border-radius: 8px;
     line-height: 1.4;
 }
@@ -494,7 +494,7 @@ h2 {
 .bubble {
     font-size: 0.75rem;
     padding: 0.25rem 0.75rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(148, 163, 184, 0.12);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
     color: var(--text-color);
@@ -508,7 +508,7 @@ h2 {
 }
 
 .dive-card {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(148, 163, 184, 0.08);
     border: 1px solid var(--glass-border);
     padding: 2rem;
     border-radius: 12px;
@@ -549,15 +549,15 @@ h2 {
 }
 
 .user-msg {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(148, 163, 184, 0.12);
     border-bottom-left-radius: 0;
 }
 
 .reply-msg {
-    background: rgba(56, 189, 248, 0.1);
+    background: rgba(14, 165, 233, 0.12);
     border-bottom-right-radius: 0;
     align-self: flex-end;
-    color: #e0f2fe;
+    color: var(--text-color);
 }
 
 .thread-msg strong {

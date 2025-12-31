@@ -182,14 +182,25 @@ body {
 .expand-arrow {
     font-size: 0.7rem;
     color: var(--text-muted);
-    margin-right: 0.5rem;
+    /* Default (Pending) - White/Muted */
+    margin-right: 0.75rem;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s, color 0.3s;
     user-select: none;
 }
 
-.task-list li:hover .expand-arrow {
+/* Completed: Green Arrow */
+.task-list li.completed .expand-arrow {
+    color: var(--success-color);
+}
+
+/* Active: Blue Arrow */
+.task-list li.active .expand-arrow {
     color: var(--accent-color);
+}
+
+.task-list li:hover .expand-arrow {
+    opacity: 0.8;
 }
 
 .task-list li.completed {
@@ -199,18 +210,6 @@ body {
 .task-list li.active {
     color: var(--accent-color);
     font-weight: 600;
-}
-
-.check {
-    color: var(--success-color);
-    margin-right: 0.5rem;
-    font-weight: bold;
-}
-
-.dot {
-    margin-right: 0.5rem;
-    font-size: 1.2rem;
-    line-height: 0;
 }
 
 .editor-area {

@@ -468,8 +468,6 @@ h2 {
 }
 
 .glass-card:hover {
-    transform: translateY(-5px);
-    background: rgba(30, 41, 59, 0.8);
     border-color: var(--accent-color);
 }
 
@@ -669,8 +667,6 @@ h2 {
 }
 
 .glass-card:hover {
-    transform: translateY(-5px);
-    background: rgba(30, 41, 59, 0.8);
     border-color: var(--accent-color);
 }
 

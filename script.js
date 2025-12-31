@@ -30,15 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const appDemo = document.querySelector('.app-demo');
             appDemo.scrollIntoView({ behavior: 'smooth' });
 
-            // Highlight the demo area
-            const ideContainer = document.querySelector('.ide-container');
-            ideContainer.style.transition = 'transform 0.3s, box-shadow 0.3s';
-            ideContainer.style.transform = 'scale(1.02)';
-            ideContainer.style.boxShadow = '0 0 30px rgba(56, 189, 248, 0.3)';
+            // Highlight the card with border
+            perceptronCard.style.transition = 'border 0.3s';
+            perceptronCard.style.border = '2px solid var(--accent-color)';
 
             setTimeout(() => {
-                ideContainer.style.transform = 'scale(1)';
-                ideContainer.style.boxShadow = 'var(--glass-shadow)';
+                perceptronCard.style.border = '';
             }, 500);
         });
     }
@@ -73,10 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
             if (!card.dataset.course) {
                 // Generic click for other cards
-                card.style.transform = 'scale(0.98)';
+                card.style.transition = 'border 0.3s';
+                card.style.border = '2px solid var(--accent-color)';
                 setTimeout(() => {
-                    card.style.transform = 'translateY(-5px)';
-                }, 150);
+                    card.style.border = '';
+                }, 300);
             }
         });
     });

@@ -940,7 +940,5 @@ footer {
         padding: 1.5rem;
     }
 
-    .ide-container {
-        grid-template-columns: 120px 1fr 120px;
-    }
+
 }
